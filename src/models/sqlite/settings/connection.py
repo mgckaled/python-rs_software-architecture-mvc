@@ -1,4 +1,4 @@
-from sqlalchemy import create_engine
+from sqlalchemy import Engine, create_engine
 
 
 class DBConnectionHandler:
@@ -6,10 +6,10 @@ class DBConnectionHandler:
         self.__connection_string = "sqlite:///storage.db"
         self.__engine = None
 
-    def connect_to_db(self):
+    def connect_to_db(self) -> None:
         self.__engine = create_engine(url=self.__connection_string)
 
-    def get_engine(self):
+    def get_engine(self) -> None | Engine:
         if self.__engine is None:
             self.connect_to_db()
         return self.__engine
