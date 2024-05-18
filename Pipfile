@@ -6,11 +6,14 @@ name = "pypi"
 [scripts]
 lint = "pylint --rcfile=.pylintrc src/"
 lint-report = "pylint --rcfile=.pylintrc --report=y src/"
+test = "pytest"
+test-list = "pytest -s -v"
 
 [packages]
 pylint = "*"
 pre-commit = "*"
 sqlalchemy = "*"
+pytest = "*"
 
 [dev-packages]
 
