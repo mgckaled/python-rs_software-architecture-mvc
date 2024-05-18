@@ -40,3 +40,6 @@ logs/
 *.iml
 *.iws
 *.ipr
+
+# databases
+storage.db
