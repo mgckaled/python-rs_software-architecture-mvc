@@ -35,7 +35,6 @@ logs/
 .cache/
 
 # Ignore editor and IDE-specific files
-.vscode/
 .idea/
 *.iml
 *.iws
