@@ -10,6 +10,7 @@ lint-report = "pylint --rcfile=.pylintrc --report=y src/"
 [packages]
 pylint = "*"
 pre-commit = "*"
+sqlalchemy = "*"
 
 [dev-packages]
 
