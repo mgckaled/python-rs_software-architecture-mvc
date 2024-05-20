@@ -5,11 +5,11 @@ from src.models.sqlite.settings.base import Base
 
 class PeopleTable(Base):
     __tablename__ = "people"
-    id = Column(__name_pos=BIGINT, primary_key=True)
-    fisrt_name = Column(__name_pos=String, nullable=False)
-    last_name = Column(__name_pos=String, nullable=False)
-    age = Column(__name_pos=BIGINT, nullable=False)
-    pet_id = Column(__name_pos=BIGINT, __type_pos=ForeignKey(
+    id = Column(name_pos=BIGINT, primary_key=True)
+    fisrt_name = Column(name_pos=String, nullable=False)
+    last_name = Column(name_pos=String, nullable=False)
+    age = Column(name_pos=BIGINT, nullable=False)
+    pet_id = Column(name_pos=BIGINT, type_pos=ForeignKey(
         "pets.id"), nullable=False)
 
     def __repr__(self) -> str:
