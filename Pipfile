@@ -14,6 +14,7 @@ pylint = "*"
 pre-commit = "*"
 sqlalchemy = "*"
 pytest = "*"
+mock-alchemy = "*"
 
 [dev-packages]
 
