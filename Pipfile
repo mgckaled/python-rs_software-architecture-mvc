@@ -8,6 +8,7 @@ lint = "pylint --rcfile=.pylintrc src/"
 lint-report = "pylint --rcfile=.pylintrc --report=y src/"
 test = "pytest"
 test-list = "pytest -s -v"
+test-list-full = "pytest -s -vv"
 
 [packages]
 pylint = "*"
