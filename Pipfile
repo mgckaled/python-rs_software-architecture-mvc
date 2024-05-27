@@ -16,6 +16,7 @@ pre-commit = "*"
 sqlalchemy = "*"
 pytest = "*"
 mock-alchemy = "*"
+pytest-mock = "*"
 
 [dev-packages]
 
