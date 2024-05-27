@@ -30,4 +30,14 @@
 
 ### Quiz - Controllers
 
+1. *O que são controllers em uma aplicação web?* **Resposta:** Classes responsáveis por gerenciar as requisições, validar a regra de negócio e retornar as respostas apropriadas.
+   
+2. *Qual é o propósito dos testes unitários em desenvolvimento de software?* **Resposta:** Verificar se unidades individuais de código (como funções ou métodos) funcionam corretamente.
+
+3. *O que é um mock em testes de software?* **Resposta:** Uma técnica para simular o comportamento de objetos ou componentes do sistema durante os testes.
+
+4. *Qual é a principal diferença entre testes unitários e testes de integração?* **Resposta:** Testes unitários são rápidos de executar e isolam unidades de código específicas, enquanto testes de integração verificam a interação entre várias partes do sistema.
+
+5. *Por que usar mocks em testes unitários?* **Resposta:** Para isolar a unidade de código sendo testada e controlar o comportamento de suas dependências.
+
 ### Quiz - Views

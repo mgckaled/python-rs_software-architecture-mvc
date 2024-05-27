@@ -25,9 +25,9 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         return formated_resposnse
 
     def __validade_first_and_last_name(self, first_name: str, last_name: str) -> None:
-        non_valid_caracters = re.compile(pattern=r'[^a-zA-Z]')
+        non_valid_characters = re.compile(pattern=r'[^a-zA-Z]')
 
-        if non_valid_caracters.search(string=first_name) or non_valid_caracters.search(string=last_name):
+        if non_valid_characters.search(string=first_name) or non_valid_characters.search(string=last_name):
             raise Exception(
                 "Nome da pessoa inválido. O nome deve conter apenas letras.")
 
