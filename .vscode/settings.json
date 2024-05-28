@@ -9,5 +9,5 @@
     "**/__pycache__": true,
     "**/*.pytest_cache": true
   },
-  "workbench.iconTheme": "simple-icons"
+  "workbench.iconTheme": "vscode-icons",
 }

@@ -6,5 +6,5 @@ from src.views.http_types.http_response import HttpResponse
 
 class ViewInterface(ABC):
     @abstractmethod
-    def handle_request(self, request: HttpRequest) -> HttpResponse:
+    def handle_request(self, http_request: HttpRequest) -> HttpResponse:
         raise NotImplementedError
