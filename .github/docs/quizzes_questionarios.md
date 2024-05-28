@@ -41,3 +41,13 @@
 5. *Por que usar mocks em testes unitários?* **Resposta:** Para isolar a unidade de código sendo testada e controlar o comportamento de suas dependências.
 
 ### Quiz - Views
+
+1. *O que são views em um framework web como o Flask?* **Resposta:** Funções ou classes que lidam com solicitações HTTP e retornam respostas por meio das interações com as controllers.
+
+2. *Qual é o principal objetivo do framework Flask em Python?* **Resposta:** Facilitar a criação de aplicações web com Python.
+
+3. *Qual método HTTP é utilizado para solicitar recursos de um servidor web?* **Resposta:** `GET`
+
+4. *O que é o protocolo HTTP?* **Resposta:** Um protocolo de transferência de hipertexto usado para transmitir informações na web.
+
+5. *O que é uma rota em um aplicativo web Flask?* **Resposta:** Um URL específico que corresponde a uma função de view em um aplicativo Flask.
