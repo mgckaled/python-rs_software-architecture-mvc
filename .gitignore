@@ -41,4 +41,3 @@ logs/
 *.ipr
 
 # databases
-storage.db
