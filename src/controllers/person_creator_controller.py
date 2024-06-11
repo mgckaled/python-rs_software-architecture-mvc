@@ -2,6 +2,7 @@ import re
 
 from src.controllers.interfaces.person_creator_controller_interface import \
     PersonCreatorControllerInterface
+from src.errors.errors_types.http_bad_request import HTTPBadRequestError
 from src.models.sqlite.interfaces.people_repository_interface import \
     PeopleRepositoryInterface
 
@@ -28,8 +29,8 @@ class PersonCreatorController(PersonCreatorControllerInterface):
         non_valid_characters = re.compile(pattern=r'[^a-zA-Z]')
 
         if non_valid_characters.search(string=first_name) or non_valid_characters.search(string=last_name):
-            raise Exception(
-                "Nome da pessoa inválido. O nome deve conter apenas letras.")
+            raise HTTPBadRequestError(
+                message="Nome da pessoa inválido. O nome deve conter apenas letras.")
 
     def __insert_person_into_db(self, first_name: str, last_name: str, age: int, pet_id: int) -> None:
         self.__people_repository.insert_person(
