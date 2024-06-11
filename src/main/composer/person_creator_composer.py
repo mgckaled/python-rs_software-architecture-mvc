@@ -4,7 +4,7 @@ from src.models.sqlite.settings.connection import db_connection_handler
 from src.views.person_creator_view import PersonCreatorView
 
 
-def person_creater_composer():
+def person_creator_composer() -> PersonCreatorView:
     model = PeopleRepository(db_connection=db_connection_handler)
     controller = PersonCreatorController(people_repository=model)
     view = PersonCreatorView(controller=controller)
