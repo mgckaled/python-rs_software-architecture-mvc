@@ -20,6 +20,7 @@ mock-alchemy = "*"
 pytest-mock = "*"
 flask = "*"
 flask-cors = "*"
+pydantic = "*"
 
 [dev-packages]
 
